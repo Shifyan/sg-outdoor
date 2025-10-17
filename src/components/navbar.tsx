@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV_ROUTES, WA_ROUTES } from "@/lib/routes";
+import { ROUTES } from "@/lib/routes";
 import { Headset, TentTree } from "lucide-react";
 
 export default function Navbar() {
@@ -11,17 +11,17 @@ export default function Navbar() {
           <h1 className="font-inter font-bold text-[16px]">SG OUTDOOR</h1>
         </div>
         <div className="flex gap-[20px] font-inter">
-          <Link href={NAV_ROUTES.HOME}>Home</Link>
-          <Link href={NAV_ROUTES.RENT}>Rent</Link>
-          <Link href={NAV_ROUTES.ABOUT}>About Us</Link>
-          <Link href={NAV_ROUTES.CONTACT}>Contact</Link>
+          <Link href={ROUTES.NAV_ROUTES.HOME}>Home</Link>
+          <Link href={ROUTES.NAV_ROUTES.RENT}>Rent</Link>
+          <Link href={ROUTES.NAV_ROUTES.ABOUT}>About Us</Link>
+          <Link href={ROUTES.NAV_ROUTES.CONTACT}>Contact</Link>
         </div>
         <div className="flex items-center gap-[12px]">
           <Headset className="h-[35px] w-[35px]" />
           <div>
             <h2 className="text-[16px]">Tanya Admin!</h2>
             <Link
-              href={WA_ROUTES.DEFAULT_WA}
+              href={ROUTES.WA_ROUTES.DEFAULT_WA}
               target="blank"
               className="text-[16px] font-semibold"
             >
