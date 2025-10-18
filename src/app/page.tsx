@@ -2,7 +2,9 @@ import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ROUTES } from "@/lib/routes";
-import { MapPinned, Wallet, PackageCheck } from "lucide-react";
+import { MapPinned, Wallet, PackageCheck, ArrowRight } from "lucide-react";
+import MyCard from "@/components/card";
+
 export default function Home() {
   return (
     <div>
@@ -64,6 +66,31 @@ export default function Home() {
               Cari kebutuhanmu, mulai dari tenda, sepatu, jaket dan barang
               lainnya
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="px-[72px] py-[60px]">
+        <div className="">
+          <div className="flex mb-[40px]">
+            <div className="flex-1/2 text-[40px] font-bold">
+              <h1>Cari dan pilih peralatan yang kamu sukai</h1>
+            </div>
+            <div className="flex-1/2 flex items-end justify-end">
+              <Link
+                href={ROUTES.NAV_ROUTES.RENT}
+                className="text-[20px] font-bold flex items-center"
+              >
+                Vew All <ArrowRight className="ms-[8px]" />
+              </Link>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-[24px]">
+            <MyCard />
+            <MyCard />
+            <MyCard />
+            <MyCard />
+            <MyCard />
+            <MyCard />
           </div>
         </div>
       </div>

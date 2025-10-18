@@ -2,7 +2,7 @@ export const ROUTES = {
   NAV_ROUTES: {
     HOME: "/",
     CONTACT: "/contact",
-    RENT: "/products",
+    RENT: "/rent",
     ABOUT: "/about",
   },
   WA_ROUTES: {
