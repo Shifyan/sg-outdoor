@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ROUTES } from "@/lib/routes";
 import { MapPinned, Wallet, PackageCheck, ArrowRight } from "lucide-react";
 import MyCard from "@/components/card";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
                 Maksimalkan Pengalaman Outdoormu dengan Gear Terbaik Kami!
               </h1>
               <p className="w-[460px] mb-[40px] text-[16px]">
-                SG Outdoor menyediakan berbagai alat outdoor terbaik yang anda
-                butuhkan untuk petualangan seru anda
+                SG Outdoor menyediakan berbagai perlengkapan outdoor terbaik
+                untuk menemani setiap petualanganmu. Dari tenda, carrier, hingga
+                perlengkapan masak lapangan.
               </p>
               <Link href={ROUTES.NAV_ROUTES.RENT}>
                 <Button className="hover:cursor-pointer bg-white hover:bg-zinc-400 text-black">
@@ -93,6 +95,9 @@ export default function Home() {
             <MyCard />
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
